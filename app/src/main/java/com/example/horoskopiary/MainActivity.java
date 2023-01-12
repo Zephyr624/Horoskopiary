@@ -137,8 +137,8 @@ public class MainActivity extends AppCompatActivity {
             noteItem.setOnClickListener(v -> {
                 editedNote = note;
                 Intent intent = new Intent(MainActivity.this, EditNoteActivity.class);
-                intent.putExtra(EditNoteActivity.EXTRA_EDIT_NOTE_TITLE, noteTextView.getText());
-                intent.putExtra(EditNoteActivity.EXTRA_EDIT_NOTE_DESCRIPTION, noteTitleTextView.getText());
+                intent.putExtra(EditNoteActivity.EXTRA_EDIT_NOTE_TITLE, noteTitleTextView.getText());
+                intent.putExtra(EditNoteActivity.EXTRA_EDIT_NOTE_DESCRIPTION, noteTextView.getText());
                 startActivityForResult(intent, EDIT_NOTE_ACTIVITY_REQUEST_CODE);
             });
         }

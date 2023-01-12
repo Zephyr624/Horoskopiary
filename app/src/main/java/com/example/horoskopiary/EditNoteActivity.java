@@ -23,8 +23,8 @@ public class EditNoteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit_note);
 
 
-        editDescriptionEditText = findViewById(R.id.edit_note_title);
-        editTitleEditText = findViewById(R.id.edit_note_description);
+        editDescriptionEditText = findViewById(R.id.edit_note_description);
+        editTitleEditText = findViewById(R.id.edit_note_title);
         if (getIntent().hasExtra(EXTRA_EDIT_NOTE_TITLE)) {
             editTitleEditText.setText(getIntent().getStringExtra(EXTRA_EDIT_NOTE_TITLE));
             editDescriptionEditText.setText(getIntent().getStringExtra(EXTRA_EDIT_NOTE_DESCRIPTION));

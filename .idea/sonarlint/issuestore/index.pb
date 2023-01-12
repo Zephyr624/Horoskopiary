@@ -9,7 +9,7 @@ d
 4app/src/main/java/com/example/horoskopiary/Note.java,6\9\696544f2fb1a79ee9fea0b716feefc24c1ef82c1
 m
 =app/src/main/java/com/example/horoskopiary/NoteViewModel.java,0\e\0e3b9aaa2653cfc97cad626b7ff2c50bcc056a63
-p
-@app/src/main/java/com/example/horoskopiary/EditNoteActivity.java,e\f\ef664001d2f53da95972fdfa6bee02f1b7907bc2
 n
 >app/src/main/java/com/example/horoskopiary/NoteRepository.java,9\8\98307b0cf9036bf781196e31d331aabb0070fcc7
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
