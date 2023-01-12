@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Horoscopes fans</string>
+    <string name="action_settings">Notes count</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="notes_count">Notes count: %d</string>
+    <string name="hint_book_title">Title…</string>
+    <string name="hint_book_author">Note…</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="empty_not_saved">Note not saved because there are empty fields.</string>
+    <string name="book_added">Note added.</string>
+    <string name="book_edited">Note edited.</string>
+    <string name="book_deleted">Note deleted.</string>
+    <string name="prompt_text">Select the zodiac sign</string>
+    <string name="submit_button">Get horoscope</string>
+    <string-array name="zodiac_signs">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+</resources>

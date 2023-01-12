@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
 
         android:layout_alignParentRight="true"
-
+        android:textColor="@color/black"
         android:ellipsize="marquee"
         android:singleLine="true"
         android:text="Title"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_alignWithParentIfMissing="true"
         android:layout_below="@id/note_date"
-
+        android:textColor="@color/black"
 
         android:layout_alignParentRight="true"
         android:gravity="center_vertical"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_alignWithParentIfMissing="true"
         android:layout_below="@id/note_title"
-
+        android:textColor="@color/black"
         android:layout_alignParentRight="true"
         android:gravity="center_vertical"
         android:text="Creation date"

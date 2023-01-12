@@ -38,7 +38,7 @@ public abstract class NoteDatabase extends RoomDatabase {
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
 
-            databaseWriteExecutor.execute(() -> {
+            /*databaseWriteExecutor.execute(() -> {
                 NoteDao dao = databaseInstance.noteDao();
                 Note note = new Note("Clean Code", "Robert C. Martin");
                 dao.insert(note);
@@ -49,7 +49,7 @@ public abstract class NoteDatabase extends RoomDatabase {
                 note=new Note("C# w pigulce 9.0","Joseph Albahari");
                 dao.insert(note);
 
-            });
+            });*/
         }
     };
 }

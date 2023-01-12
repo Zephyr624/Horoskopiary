@@ -12,8 +12,10 @@
         android:layout_marginTop="@dimen/big_padding"
         android:layout_marginBottom="@dimen/big_padding"
         android:autofillHints=""
+        android:textColor="@color/black"
         android:fontFamily="sans-serif-light"
         android:hint="@string/hint_book_title"
+        android:textColorHint="@color/black"
         android:inputType="textAutoComplete"
         android:padding="@dimen/small_padding"
         android:textSize="18sp" />
@@ -25,8 +27,10 @@
         android:layout_marginTop="@dimen/big_padding"
         android:layout_marginBottom="@dimen/big_padding"
         android:autofillHints=""
+        android:textColor="@color/black"
         android:fontFamily="sans-serif-light"
         android:hint="@string/hint_book_author"
+        android:textColorHint="@color/black"
         android:inputType="textAutoComplete"
         android:padding="@dimen/small_padding"
         android:textSize="18sp" />
@@ -35,6 +39,7 @@
         android:id="@+id/button_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:background="@color/buttonColor"
         android:text="@string/button_save" />
 

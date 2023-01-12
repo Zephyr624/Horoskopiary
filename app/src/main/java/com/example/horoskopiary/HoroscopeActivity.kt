@@ -36,7 +36,7 @@ class HoroscopeActivity : AppCompatActivity() ,
             }
         }
         val spinner = findViewById<Spinner>(R.id.spinner)
-        val adapter = ArrayAdapter.createFromResource(this,R.array.sunsigns,android.R.layout.simple_spinner_item)
+        val adapter = ArrayAdapter.createFromResource(this,R.array.zodiac_signs,android.R.layout.simple_spinner_item)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter;
         spinner.onItemSelectedListener = this
@@ -63,7 +63,7 @@ class HoroscopeActivity : AppCompatActivity() ,
             // set host name
             connection.setRequestProperty("x-rapidapi-host", "sameer-kumar-aztro-v1.p.rapidapi.com")
             // set the rapid-api key
-            connection.setRequestProperty("x-rapidapi-key", "8335f674demsh97cbc81e0fe66a6p10304ajsn4b58afb00b20")
+            connection.setRequestProperty("x-rapidapi-key", "<API KEY>")
             connection.setRequestProperty("content-type", "application/x-www-form-urlencoded")
             // set the request method - POST
             connection.requestMethod = "POST"

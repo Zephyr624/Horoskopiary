@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar); //here toolbar is your id in xml
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Horoskopiary");
+        toolbar.setTitle("@string/app_name");
+
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
         final NoteAdapter adapter = new NoteAdapter();
         recyclerView.setAdapter(adapter);
