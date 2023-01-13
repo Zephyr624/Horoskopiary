@@ -45,16 +45,17 @@ class HoroscopeActivity : AppCompatActivity() ,
     public suspend fun getPredictions(view: android.view.View) {
         try {
             val result = GlobalScope.async {
-                callAztroAPI("https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=" + sunSign + "&day=today")
+                callAPI("https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=" + sunSign + "&day=today")
             }.await()
             onResponse(result)
         } catch (e: Exception) {
             e.printStackTrace()
         }
     }
-    private fun callAztroAPI(apiUrl:String ):String?{
+    private fun callAPI(apiUrl:String ):String?{
         var result: String? = ""
         val url: URL;
+
         var connection: HttpURLConnection? = null
         try {
             url = URL(apiUrl)
