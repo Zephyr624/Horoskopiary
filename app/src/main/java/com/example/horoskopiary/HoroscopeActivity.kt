@@ -59,17 +59,12 @@ class HoroscopeActivity : AppCompatActivity() ,
         try {
             url = URL(apiUrl)
             connection = url.openConnection() as HttpURLConnection
-            // set headers for the request
-            // set host name
             connection.setRequestProperty("x-rapidapi-host", "sameer-kumar-aztro-v1.p.rapidapi.com")
-            // set the rapid-api key
             connection.setRequestProperty("x-rapidapi-key", "<API KEY>")
             connection.setRequestProperty("content-type", "application/x-www-form-urlencoded")
-            // set the request method - POST
             connection.requestMethod = "POST"
             val `in` = connection.inputStream
             val reader = InputStreamReader(`in`)
-            // read the response data
             var data = reader.read()
             while (data != -1) {
                 val current = data.toChar()
@@ -80,20 +75,15 @@ class HoroscopeActivity : AppCompatActivity() ,
         } catch (e: Exception) {
             e.printStackTrace()
         }
-        // if not able to retrieve data return null
         return null
     }
     private fun onResponse(result: String?) {
         try {
-            // convert the string to JSON object for better reading
             val resultJson = JSONObject(result)
-            // Initialize prediction text
             var prediction ="Today's prediction \n"
             prediction += this.sunSign+"\n"
-            // Update text with various fields from response
             prediction += resultJson.getString("date_range")+"\n"
             prediction += resultJson.getString("description")
-            //Update the prediction to the view
             setText(this.resultView,prediction)
         } catch (e: Exception) {
             e.printStackTrace()
